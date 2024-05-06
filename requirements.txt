@@ -1,0 +1,11 @@
+# SEMPRE QUE FOR ADICIONADO ALGO DE NOVO AQUI TEREMOS QUE EXECUTAR NOVAMENTE O DOCKER PARA QUE INSTALE AS NOVAS EXIGÊNCIAS E VOLTAR A EXECUTAR A APLICAÇÃO CMD---> (" docker build -t rest-apis-flask-python . "
+flask==3.0.3
+flask-smorest
+python-dotenv
+sqlalchemy
+flask-sqlalchemy
+flask-jwt-extended
+marshmallow
+gunicorn
+passlib # BIBLIOTECA PARA HASH DAS PASSWORDS (TORNA-AS ILEGIVEIS)
+flask-migrate
