@@ -6,6 +6,6 @@ sqlalchemy
 flask-sqlalchemy
 flask-jwt-extended
 marshmallow
-gunicorn
 passlib # BIBLIOTECA PARA HASH DAS PASSWORDS (TORNA-AS ILEGIVEIS)
 flask-migrate
+gunicorn
