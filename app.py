@@ -5,6 +5,7 @@ from flask import Flask, jsonify
 from flask_smorest import Api
 from flask_jwt_extended import JWTManager
 from flask_migrate import Migrate
+from dotenv import load_dotenv
 
 from db import db
 from blocklist import BLOCKLIST
@@ -22,6 +23,7 @@ def create_app(db_url=None):
                         # QUANDO DEFINIRMOS UM ENDPOINT NESTA APP, QUE POSSA ACEITAR DADOS E DEVOLVER UMA RESPOSTA, A EXECUÇÃO DA APP DISPONIBILIZARÁ ESSES ENDPOINTS A UM CLIENTE.
                         # LOGO EXECUTAR A APLICAÇÃO É SEMPRE A COISA QUE QUEREMOS FAZER PARA USAR O FLASK. PARA ISSO, COM O TERMINAL ABERTO E COM O AMBIENTE VIRTUAL ATIVADO FAZ-SE 'flask run' NA RAIZ DA PASTA ONDE ESTÁ O API FLASK,
                         # POIS VAI PROCURAR O ARQUIVO CHAMADO "app" E DENTRO DELE A VARIÁVEL COM O NOME "app". É IMPORTANTE QUE O NOME DO FICHEIRO E DA VARIÁVEL ESTEJAM CORRETOS.
+    load_dotenv()
 
     # OPÇOES DE CONFIGURAÇÃO
     app.config["PROPAGATE_EXCEPTIONS"] = True
